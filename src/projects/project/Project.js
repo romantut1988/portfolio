@@ -10,8 +10,10 @@ function Project(props) {
             <div className={style.image}>
                 <a className={style.viewBtn}>Смотреть</a>
             </div>
-            <h3>{props.title}</h3>
-            <span className={style.descriprion}>{props.description}</span>
+            <div className={style.projectInfo}>
+                <h3 className={style.projectTitle}>{props.title}</h3>
+                <span className={style.descriprion}>{props.description}</span>
+            </div>
         </div>
     );
 }

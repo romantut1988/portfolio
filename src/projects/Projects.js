@@ -8,6 +8,10 @@ import Title from '../common/components/title/Title';
 
 
 function Projects() {
+    // const social = {
+    //     color: 'blue',
+    //     backgroundImage: 'url(' + imgUrl + ')',
+    // };
     return (
         <div className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
