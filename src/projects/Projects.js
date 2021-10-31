@@ -3,22 +3,27 @@ import styleContainer from '../common/styles/Container.module.css';
 import style from './Projects.module.css';
 import Project from './project/Project';
 import Title from '../common/components/title/Title';
-
+import todoImage from './../assets/image/contacts.png'
+import socialImage from './../assets/image/contacts.png'
 
 
 
 function Projects() {
-    // const social = {
-    //     color: 'blue',
-    //     backgroundImage: 'url(' + imgUrl + ')',
-    // };
+    const social = {
+        color: 'blue',
+        backgroundImage: `url(${socialImage})`,
+    };
+    const todolist = {
+        color: 'blue',
+        backgroundImage: `url(${todoImage})`,
+    };
     return (
         <div className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title text={'Project'}/>
                 <div className={style.projects}>
-                    <Project title={'Social network'} description={'sed do eismod tempor incudidunt ut labore et delore magna aliqua Ut enim...'}/>
-                    <Project title={'Todo list'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit,'}/>
+                    <Project style={social} title={'Social network'} description={'sed do eismod tempor incudidunt ut labore et delore magna aliqua Ut enim...'}/>
+                    <Project style={todolist} title={'Todo list'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit,'}/>
                 </div>
             </div>
         </div>

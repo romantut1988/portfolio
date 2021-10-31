@@ -7,7 +7,7 @@ import style from './Project.module.css';
 function Project(props) {
     return(
         <div className={style.project}>
-            <div className={style.image}>
+            <div className={style.image} style={props.style}>
                 <a className={style.viewBtn}>Смотреть</a>
             </div>
             <div className={style.projectInfo}>
