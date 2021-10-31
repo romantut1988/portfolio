@@ -1,0 +1,70 @@
+@import '../../common/style/sass/variables';
+
+.project {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  background-color: $bgColor;
+
+  .image {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+
+    .viewBtn {
+      background-color: $primaryColor;
+      padding: 10px 20px;
+      position: relative;
+      z-index: 1;
+      color: $textColor;
+    }
+  }
+
+  .projectInfo {
+    padding: 25px 20px;
+
+    .projectTitle {
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      margin: 0 0 5px;
+      color: $textColor;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .description {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: $textColor;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -12,8 +12,8 @@ function App() {
       <Header />
       <Main />
       <Skills />
-        <Projects/>
-        <Footer />
+      <Projects />
+      <Footer />
     </div>
   );
 }
