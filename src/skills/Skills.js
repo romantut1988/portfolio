@@ -1,8 +1,11 @@
 import React from 'react';
-import styleContainer from './../common/style/Container.module.css';
 import style from './Skills.module.css';
+import styleContainer from './../common/style/Container.module.css';
 import Skill from "./skill/Skill";
-import Title from "../common/components/title/Title";
+import reactIcon from './assets/img/react-icon.svg';
+import jsIcon from './assets/img/js-icon.svg';
+import htmlIcon from './assets/img/html-icon.svg';
+import Fade from 'react-reveal/Fade';
 
 
 
