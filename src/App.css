@@ -1,4 +1,14 @@
-.App {
+@import './common/style/sass/variables.scss';
 
+
+.App {
+    >div {
+        &:nth-child(n) {
+        background-color: $bgSecondary;
+    }
+        &:nth-child(2n) {
+             background-color: $bgPrimary;
+         }
+     }
 }
 

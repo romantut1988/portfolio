@@ -29,7 +29,7 @@ function Main() {
                     <span>I am Roman<span>Amialkovich</span></span>
                 <h1>Web.</h1>
                 <ReactTypingEffect
-                    text='Web'.
+                    text='Web.' speed='3s'
                 />
                 </div>
                 <div className={style.photo}>

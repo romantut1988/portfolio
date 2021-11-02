@@ -43,8 +43,10 @@
                     }
                  }
                 &:nth-child(3) {
-                    @include text($TitleFontFamily, 28px, 1.8, 400);
-                    margin: 0;
+                    span {
+                        @include text($TitleFontFamily, 28px, 1.8, 400);
+                        margin: 0;
+                    }
                 }
             }
 
