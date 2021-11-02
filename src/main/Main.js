@@ -3,6 +3,7 @@ import style from './Main.module.scss';
 import Particles from 'react-particles-js';
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
+import Tilt from 'react-tilt';
 
 
 
@@ -23,7 +24,7 @@ function Main() {
         <div className={style.mainBlock}>
             <Particles className={style.particles} params={particlesOptions} />
             <Fade top>
-            <div className={style.container}>
+            <Tilt className={style.container}>
                 <div className={style.greeting}>
                 <span>Hi There</span>
                     <span>I am Roman<span>Amialkovich</span></span>
@@ -32,11 +33,14 @@ function Main() {
                     text='Web.' speed='3s'
                 />
                 </div>
+                    <Tilt className='Tilt' options={{max : 25}} >
                 <div className={style.photo}>
                     <div className={style.image}>
 
                     </div>
                 </div>
+                </Tilt>
+
             </div>
             </Fade>
         </div>

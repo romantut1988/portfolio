@@ -3,8 +3,8 @@ import styleContainer from '../common/style/Container.module.css';
 import style from './Projects.module.scss';
 import Project from './project/Project';
 import Title from '../common/components/title/Title';
-import todoImage from './../assets/image/contacts.png'
-import socialImage from './../assets/image/contacts.png'
+import todoImage from './../assets/image/contacts.png';
+import socialImage from './../assets/image/contacts.png';
 
 
 
@@ -18,7 +18,7 @@ function Projects() {
         backgroundImage: `url(${todoImage})`,
     };
     return (
-        <div className={style.projectsBlock}>
+        <div id='Projects' className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title text={'Project'}/>
                 <div className={style.projects}>
