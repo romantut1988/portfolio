@@ -2,9 +2,23 @@ import React from 'react';
 import style from './Main.module.css';
 import Particles from 'react-particles-js';
 
+
+const particlesOptions = {
+    particles: {
+        number: {
+            value:80,
+            density: {
+                enable: true,
+                value_area: 800
+            }
+        }
+    }
+};
+
 function Main() {
     return (
         <div className={style.mainBlock}>
+            <Particles className={style.particles} params={particlesOptions} />
             <div className={style.container}>
                 <div className={style.greeting}>
                 <span>Hi There</span>
