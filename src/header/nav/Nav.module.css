@@ -1,6 +1,22 @@
+@import '../../common/style/sass/variables.scss';
+@import '../../common/style/sass/mixins.scss';
+
 .nav {
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-}
+    width: 340px;
+    @include flex(row, space-between, stretch, nowrap);
+        a {
+            @include text($TitleFontFamily, 16px, 1.2, 400);
+            color: $textColor;
+            cursor: pointer;
+            &:hover {
+                text-decoration: none;
+                color: $primaryColor;
+             }
+        }
+        .active {
+            color: $primaryColor
+        }
+        @media screen and (max-width: 400px) {
+            display: none;
+        }
+    }
