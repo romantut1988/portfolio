@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Main.module.scss';
-import Particles from 'react-particles-js';
+// import Particles from 'react-particles-js';
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-tilt';
@@ -22,7 +22,7 @@ const particlesOptions = {
 function Main() {
     return (
         <div className={style.mainBlock}>
-            <Particles className={style.particles} params={particlesOptions} />
+
             <Fade top>
             <Tilt className={style.container}>
                 <div className={style.greeting}>
@@ -40,8 +40,7 @@ function Main() {
                     </div>
                 </div>
                 </Tilt>
-
-            </div>
+            </Tilt>
             </Fade>
         </div>
     );

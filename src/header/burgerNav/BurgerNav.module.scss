@@ -9,7 +9,6 @@
         right: 0;
         left: 0;
         top: 0;
-        /*display: none;*/
         @include flex(column, space-between, center, nowrap);
         background-color: #252527;
         height: 0;

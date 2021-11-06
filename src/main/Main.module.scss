@@ -1,5 +1,5 @@
-@import '../common/style/sass/variables.scss';
-@import '../common/style/sass/mixins.scss';
+@import '../../common/style/sass/variables';
+@import '../../common/style/sass/mixins';
 
 
 .mainBlock {
@@ -64,7 +64,7 @@
                 height: 400px;
                 width: 300px;
                 @include bgSettings();
-                background-image: url('./../assets/image/photo.jpg');
+                background-image: url('../../assets/img/photo.jpg');
                 background-position: 80% 0;
                 @media screen and (max-width: 600px) {
                     height: 360px;
